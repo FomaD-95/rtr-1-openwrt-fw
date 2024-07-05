@@ -33,21 +33,8 @@ define Package/lua-leveldb/Default/description
 A fast and lightweight key/value database library
 endef
 
-PKG_FIXUP:=autoreconf
-
-define Build/Prepare
-	mkdir -p $(PKG_BUILD_DIR)
-	$(TAR) -xzf $(DL_DIR)/$(PKG_SOURCE) --strip=1 -C $(PKG_BUILD_DIR)
-	/usr/bin/autoreconf -fiv $(PKG_BUILD_DIR)
-endef
-    
 define Build/Compile
-	$(MAKE) -C $(PKG_BUILD_DIR)
-	$(MAKE) -C $(PKG_BUILD_DIR) DESTDIR="$(PKG_INSTALL_DIR)" install
-endef
-
-define Build/InstallDev
-	$(MAKE) -C $(PKG_BUILD_DIR) DESTDIR="$(1)" install
+  $(call Build/Compile/Default)
 endef
 
 define Package/lua-leveldb/install
