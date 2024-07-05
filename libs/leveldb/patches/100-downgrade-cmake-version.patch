@@ -2,7 +2,7 @@ Index: leveldb-1.22/CMakeLists.txt
 ===================================================================
 --- leveldb-1.22.orig/CMakeLists.txt
 +++ leveldb-1.22/CMakeLists.txt
-@@ -2,7 +2,7 @@
+@@ -2,6 +2,6 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file. See the AUTHORS file for names of contributors.
 
