@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 PKG_INSTALL:=1
 
 PKG_SOURCE:=$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/google/leveldb/#1.22
+PKG_SOURCE_URL:=https://github.com/google/leveldb/archive/refs/tags/
 PKG_MD5SUM:=e1dbde14dcda1b58b49f0c214464fdd9
 PKG_BUILD_PARALLEL:=1
 
