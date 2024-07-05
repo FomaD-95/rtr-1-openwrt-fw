@@ -1,5 +1,3 @@
-Index: leveldb-1.22/CMakeLists.txt
-===================================================================
 --- leveldb-1.22.orig/CMakeLists.txt
 +++ leveldb-1.22/CMakeLists.txt
 @@ -2,6 +2,6 @@
